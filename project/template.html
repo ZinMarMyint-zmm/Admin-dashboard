@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./vendor/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="main container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-3 col-xl-2 vh-100 sidebar">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                    <span class="bg-primary rounded p-2 d-flex justify-content-center align-items-center me-2">
+                        <i class="feather-shopping-bag text-white h4"></i>
+                    </span>
+                    <span class="fw-bolder h4 text-uppercase text-primary">My Shop</span>
+                </div>
+                <button class="hide-sidebar-btn btn btn-light d-block d-lg-none">
+                    <i class="feather-x text-primary" style="font-size: 2em;"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-9 col-xl-10 vh-100 content">
+            <div class="row header mb-4">
+                <div class="col-12">
+                    <div class="p-2 bg-primary rounded d-flex justify-content-between align-items-center">
+                        <div class="show-sidebar-btn btn-primary d-block d-lg-none">
+                            <i class="feather-menu text-light" style="font-size: 2em;"></i>
+                        </div>
+                        <form action="" method="post" class="row d-none d-md-block">
+                            
+                                <div class="d-flex">
+                                    <div class="col-auto me-2">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-light">
+                                            <i class="feather-search text-primary"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                        </form>
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/user/avatar1.jpg" class="user-img shadow-sm"> Zin Mar Myint
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card mb-4 status-card" onclick="go('https://google.com')">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <i class="feather-shopping-bag h1 text-primary"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2 h4 fw-bolder">
+                                        <span class="counter-up">123</span>
+                                    </p>
+                                    <p class="mb-0 text-black-50">Today Order</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card mb-4 status-card" onclick="go('https://google.com')">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <i class="feather-users h1 text-primary"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2 h4 fw-bolder">
+                                        <span class="counter-up">456</span>
+                                    </p>
+                                    <p class="mb-0 text-black-50">Total Users</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card mb-4 status-card" onclick="go('https://google.com')">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <i class="feather-package h1 text-primary"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2 h4 fw-bolder">
+                                        <span class="counter-up">223</span>
+                                    </p>
+                                    <p class="mb-0 text-black-50">Today Items</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card mb-4 status-card" onclick="go('https://google.com')">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <i class="feather-map-pin h1 text-primary"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2 h4 fw-bolder">
+                                        <span class="counter-up">14</span>
+                                    </p>
+                                    <p class="mb-0 text-black-50">Support Location</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="vh-100 bg-info"></div>
+                </div>
+                <div class="col-12">
+                    <div class="vh-100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./vendor/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
+<script src="./vendor/boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="./vendor/way_point/jquery.waypoints.js"></script>
+<script src="./vendor/counter_up/counter_up.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/dashboard.js"></script>
+</body>
+</html>
