@@ -49,6 +49,12 @@
 .ov-img{
     margin-left: -25px;
 }
+.item-card{
+    margin-top: -100px;
+}
+.item-card-img{
+    height: 200px;
+}
 @media screen and (max-width:830px){
     .sidebar{
         position: fixed;
