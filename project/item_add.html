@@ -92,18 +92,70 @@
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <div class="form-group">
+                                        <div class="form-group mb-2">
                                             <label for="photo">
                                                 Photo Upload 
                                             </label>
                                             <i class="feather-info" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Only Support Jpg, Png"></i>
+
                                             <input type="file" name="photo" id="photo" class="form-control p-1" required>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="name">Item Name</label>
+                                            <input type="text" id="name" name="name" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="t">Item Type</label>
+                                            <select name="type" class="form-control custom-select" id="t">
+                                                <option value="0">ကုန်စို</option>
+                                                <option value="1">ကုန်ခြောက်</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="c">Category</label>
+                                            <select name="type" class="form-control custom-select" id="c">
+                                                <option value="0">ကုန်စို</option>
+                                                <option value="1">ကုန်ခြောက်</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="sc">Sub Category</label>
+                                            <select name="type" class="form-control custom-select" id="sc">
+                                                <option value="0">ကုန်စို</option>
+                                                <option value="1">ကုန်ခြောက်</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
-
+                                        <div class="row mb-2">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="q">Item Quantity</label>
+                                                    <input type="number" id="q" name="q" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="type">Unit</label>
+                                                    <select name="type" class="form-control custom-select" id="type">
+                                                        <option value="0">ကုန်စို</option>
+                                                        <option value="1">ကုန်ခြောက်</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="price">Price</label>
+                                            <input type="number" id="price" name="price" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="des">Description</label>
+                                            <textarea type="number" id="des" name="des" rows="8" class="form-control"></textarea>
+                                        </div>
                                     </div>
                                 </div>
+                                <hr>
+                                <button class="btn btn-primary">Add Item</button>
                             </form>
                         </div>
                     </div>
