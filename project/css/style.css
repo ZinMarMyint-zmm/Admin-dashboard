@@ -62,6 +62,15 @@
 .sub-list tr:active{
     transform: scale(1.02);
 }
+.full-screen-card{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2005;
+    height: 100vh;
+    overflow: scroll;
+}
 @media screen and (max-width:830px){
     .sidebar{
         position: fixed;
